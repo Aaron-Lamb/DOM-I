@@ -64,3 +64,9 @@ aFive.textContent = siteContent["nav"]["nav-item-5"];
 
 let aSix = document.querySelectorAll("a")[5];
 aSix.textContent = siteContent["nav"]["nav-item-6"];
+
+let DOM = document.querySelectorAll("h1")[0];
+DOM.textContent = siteContent["cta"]["h1"];
+
+let DOMButton = document.querySelectorAll("button")[0];
+DOMButton.textContent = siteContent["cta"]["button"];
