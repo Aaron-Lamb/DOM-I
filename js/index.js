@@ -70,3 +70,48 @@ DOM.textContent = siteContent["cta"]["h1"];
 
 let DOMButton = document.querySelectorAll("button")[0];
 DOMButton.textContent = siteContent["cta"]["button"];
+
+let featureHead = document.querySelectorAll('h4')[0];
+featureHead.textContent = siteContent["main-content"]["features-h4"];
+
+let featureContent = document.querySelectorAll('p')[0];
+featureContent.textContent = siteContent["main-content"]["features-content"];
+
+let aboutHead = document.querySelectorAll('h4')[1];
+aboutHead.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutContent = document.querySelectorAll("p")[1];
+aboutContent.textContent = siteContent["main-content"]['about-content'];
+
+let serviceHead = document.querySelectorAll('h4')[2];
+serviceHead.textContent = siteContent['main-content']['services-h4'];
+
+let serviceContent = document.querySelectorAll('p')[2];
+serviceContent.textContent = siteContent['main-content']['services-content'];
+
+let productHead = document.querySelectorAll('h4')[3];
+productHead.textContent = siteContent['main-content']['product-h4'];
+
+let productContent = document.querySelectorAll('p')[3];
+productContent.textContent = siteContent['main-content']['product-content'];
+
+let visionHead = document.querySelectorAll('h4')[4];
+visionHead.textContent = siteContent['main-content']['vision-h4'];
+
+let visionContent = document.querySelectorAll('p')[4];
+visionContent.textContent = siteContent['main-content']['vision-content'];
+
+let contactHead = document.querySelectorAll('h4')[5];
+contactHead.textContent = siteContent['contact']['contact-h4'];
+
+let contactAdd = document.querySelectorAll('p')[5];
+contactAdd.textContent = siteContent['contact']['address'];
+
+let contactNum = document.querySelectorAll('p')[6];
+contactNum.textContent = siteContent['contact']['phone'];
+
+let contactMail = document.querySelectorAll('p')[7];
+contactMail.textContent = siteContent['contact']['email'];
+
+let footerContent = document.querySelectorAll('p')[8];
+footerContent.textContent = siteContent['footer']['copyright'];
