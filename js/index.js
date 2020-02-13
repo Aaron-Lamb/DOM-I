@@ -65,6 +65,16 @@ aFive.textContent = siteContent["nav"]["nav-item-5"];
 let aSix = document.querySelectorAll("a")[5];
 aSix.textContent = siteContent["nav"]["nav-item-6"];
 
+let newNavOne = document.createElement('a');
+newNavOne.textContent = "Ideas";
+aSix.appendChild(newNavOne);
+newNavOne.style.marginLeft = '35%';
+
+let newNavTwo = document.createElement('a');
+newNavTwo.textContent = "Help";
+aOne.prepend(newNavTwo);
+newNavTwo.style.marginRight = '35%';
+
 let DOM = document.querySelectorAll("h1")[0];
 DOM.textContent = siteContent["cta"]["h1"];
 
@@ -115,3 +125,28 @@ contactMail.textContent = siteContent['contact']['email'];
 
 let footerContent = document.querySelectorAll('p')[8];
 footerContent.textContent = siteContent['footer']['copyright'];
+
+let navColor = document.querySelectorAll('a');
+navColor.forEach(Colour => {Colour.style.color = 'green';})
+
+
+let back = document.querySelector('body');
+back.style.backgroundColor = 'alicewhite';
+back.style.color = 'slategrey';
+
+DOMButton.style.borderRadius = '10%';
+
+footerContent.style.border = '1px dashed grey';
+footerContent.style.padding = '2% 0% 2% 0%';
+
+let navBack = document.querySelector('header');
+navBack.style.backgroundColor = 'lightblue';
+
+DOMButton.addEventListener('click', (bait) => {back.style.backgroundColor = 'black', back.style.color = 'orange', navBack.style.backgroundColor = 'silver';})
+
+let newButton = document.createElement('button');
+
+newButton.textContent = "HOLD UP!";
+footerContent.appendChild(newButton);
+
+newButton.addEventListener('click', (wait) => {back.style.backgroundColor = 'white', back.style.color = 'slategrey', navBack.style.backgroundColor = 'lightblue';})
