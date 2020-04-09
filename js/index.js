@@ -40,3 +40,41 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Update nav anchors
+let navBar = document.querySelector("nav");
+
+let navAnchorOne = document.querySelectorAll("a")[0];
+navAnchorOne.classList.add(siteContent["nav"]["nav-item-1"]);
+navAnchorOne.textContent = "Services";
+
+let navAnchorTwo = document.querySelectorAll("a")[1];
+navAnchorTwo.classList.add(siteContent["nav"]["nav-item-2"]);
+navAnchorTwo.textContent = "Product";
+
+let navAnchorThree = document.querySelectorAll("a")[2];
+navAnchorThree.classList.add(siteContent["nav"]["nav-item-3"]);
+navAnchorThree.textContent = "Vision";
+
+let navAnchorFour = document.querySelectorAll("a")[3];
+navAnchorFour.classList.add(siteContent["nav"]["nav-item-4"]);
+navAnchorFour.textContent = "Features";
+
+let navAnchorFive = document.querySelectorAll("a")[4];
+navAnchorFive.classList.add(siteContent["nav"]["nav-item-5"]);
+navAnchorFive.textContent = "About";
+
+let navAnchorSix = document.querySelectorAll("a")[5];
+navAnchorSix.classList.add(siteContent["nav"]["nav-item-6"]);
+navAnchorSix.textContent = "Contact";
+
+let navAnchorZero = document.createElement("a");
+navAnchorZero.classList.add(siteContent["nav"]["nav-item-1"]);
+navAnchorZero.textContent = "Apply";
+
+let navAnchorSeven = document.createElement("a");
+navAnchorSeven.classList.add(siteContent["nav"]["nav-item-6"]);
+navAnchorSeven.textContent = "Resources";
+
+navBar.prepend(navAnchorZero);
+navBar.appendChild(navAnchorSeven);
