@@ -46,27 +46,27 @@ let navBar = document.querySelector("nav");
 
 let navAnchorOne = document.querySelectorAll("a")[0];
 navAnchorOne.classList.add(siteContent["nav"]["nav-item-1"]);
-navAnchorOne.textContent = "Services";
+navAnchorOne.textContent = siteContent["nav"]["nav-item-1"];
 
 let navAnchorTwo = document.querySelectorAll("a")[1];
 navAnchorTwo.classList.add(siteContent["nav"]["nav-item-2"]);
-navAnchorTwo.textContent = "Product";
+navAnchorTwo.textContent = siteContent["nav"]["nav-item-2"];
 
 let navAnchorThree = document.querySelectorAll("a")[2];
 navAnchorThree.classList.add(siteContent["nav"]["nav-item-3"]);
-navAnchorThree.textContent = "Vision";
+navAnchorThree.textContent = siteContent["nav"]["nav-item-3"];
 
 let navAnchorFour = document.querySelectorAll("a")[3];
 navAnchorFour.classList.add(siteContent["nav"]["nav-item-4"]);
-navAnchorFour.textContent = "Features";
+navAnchorFour.textContent = siteContent["nav"]["nav-item-4"];
 
 let navAnchorFive = document.querySelectorAll("a")[4];
 navAnchorFive.classList.add(siteContent["nav"]["nav-item-5"]);
-navAnchorFive.textContent = "About";
+navAnchorFive.textContent = siteContent["nav"]["nav-item-5"];
 
 let navAnchorSix = document.querySelectorAll("a")[5];
 navAnchorSix.classList.add(siteContent["nav"]["nav-item-6"]);
-navAnchorSix.textContent = "Contact";
+navAnchorSix.textContent = siteContent["nav"]["nav-item-6"];
 
 let navAnchorZero = document.createElement("a");
 navAnchorZero.classList.add(siteContent["nav"]["nav-item-1"]);
@@ -78,3 +78,65 @@ navAnchorSeven.textContent = "Resources";
 
 navBar.prepend(navAnchorZero);
 navBar.appendChild(navAnchorSeven);
+
+//Render the cta section
+let ctaHeader = document.querySelector("h1");
+ctaHeader.textContent = siteContent["cta"]["h1"];
+ctaHeader.style.display = "flex";
+
+let ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+//Set the main content
+let featureH4 = document.querySelectorAll("h4")[0];
+featureH4.textContent = siteContent["main-content"]["features-h4"];
+
+let featureContent = document.querySelectorAll("p")[0];
+featureContent.textContent = siteContent["main-content"]["features-content"];
+
+let aboutH4 = document.querySelectorAll("h4")[1];
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutContent = document.querySelectorAll("p")[1];
+aboutContent.textContent = siteContent["main-content"]["about-content"];
+
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+let servicesH4 = document.querySelectorAll("h4")[2];
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesContent = document.querySelectorAll("p")[2];
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+
+let productH4 = document.querySelectorAll("h4")[3];
+productH4.textContent = siteContent["main-content"]["product-h4"];
+
+let productContent = document.querySelectorAll("p")[3];
+productContent.textContent = siteContent["main-content"]["product-content"];
+
+let visionH4 = document.querySelectorAll("h4")[4];
+visionH4.textContent = siteContent["main-content"]["vision-h4"];
+
+let visionContent = document.querySelectorAll("p")[4];
+visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+//Render contact
+let contactHeader = document.querySelectorAll("h4")[5];
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+let contactAddress = document.querySelectorAll("p")[5];
+contactAddress.textContent = siteContent["contact"]["address"];
+
+let contactNumber = document.querySelectorAll("p")[6];
+contactNumber.textContent = siteContent["contact"]["phone"];
+
+let contactEmail = document.querySelectorAll("p")[7];
+contactNumber.textContent = siteContent["contact"]["email"];
+
+//Render footer
+let footerCR = document.querySelectorAll("p")[8];
+footerCR.textContent = siteContent["footer"]["copyright"];
